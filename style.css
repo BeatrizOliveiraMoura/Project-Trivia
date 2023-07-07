@@ -1,0 +1,130 @@
+/* seleção de todos os elementos para resetar as formatações  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* altera todos os botões  */
+button {
+    cursor: pointer;
+}
+
+/* vh para ocupar toda a tela disponível  */
+body {
+    background-color: #0e0260;
+    color: #fabcf7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container geral, contorno  */
+.container {
+    background-color: #0e0260;
+    width: 90%;
+    max-width: 800px;
+  
+    border: 2px solid #3deef8;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  div da pergunta e respostas  */
+.questions-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+/* div das perguntas  */
+.question {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* div das respostas  */
+.answers-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+/* botão próxima pergunta  */
+.next-question {
+    margin-top: 32px;
+}
+
+/* estilo de todos os botões  */
+.button {
+    background-color: #53fffb;
+    color: #0e0260;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 32px;
+
+    transition: filter 0.2s;
+}
+
+/* mudança de cor ao passar o mouse  */
+.button:not(:disable):hover {
+    filter: brightness(0.8);
+}
+
+/*   */
+.answer:disabled {
+    cursor: not-allowed;
+}
+
+/*   */
+.final-message {
+    font-size: 20px;
+    text-align: center;
+}
+
+/*   */
+.final-message span {
+    display: block;
+    margin-top: 8px;
+}
+
+/* botoes .final*/
+.final-message{
+font-size: 20px;
+  text-align: center;
+}
+
+final-message span{
+  display: block;
+  margin-top: 8px;
+}
+
+/* todos elementos com hide são alterados */
+.hide {
+    display: none;
+}
+
+/* cor do acerto  */
+.correct {
+    background-color: #049b48;
+}
+
+/* cor do erro  */
+.incorrect {
+    background-color: #a10101;
+}
